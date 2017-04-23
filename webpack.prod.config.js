@@ -21,16 +21,3 @@ module.exports.plugins.push(
   })
 );
 
-module.exports.module.loaders[2] = {
-  test: /\.scss$/,
-  loader: ExtractTextPlugin.extract("css", "css-loader")
-};
-
-module.exports.module.loaders[3] = {
-  test: /\.styl$/,
-  loader: ExtractTextPlugin.extract("stylus", "css-loader!stylus-loader")
-};
-
-module.exports.plugins.push(
-  new ExtractTextPlugin('../css/main.css')
-);

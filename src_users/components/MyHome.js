@@ -1,6 +1,6 @@
 import React from "react";
 import RaisedButton from 'material-ui/RaisedButton';
-import myHome from '../stylesheets/myHome.styl';
+import myHome from '../stylesheets/myHome.css';
 
 
 // Home page component

@@ -3,6 +3,7 @@
 var app_root = 'src_users'; // the app root folder: src, src_users, etc
 var path = require('path');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   app_root: app_root, // the app root folder, needed by the other webpack configs
@@ -24,13 +25,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: "style-loader!css-loader"
+        loaders: ["style","css"]
       },
-      {
-        test: /\.styl$/,
-        loader: 'style-loader!css-loader!stylus-loader'
-      }
-
     ],
   },
   devServer: {
@@ -42,5 +38,6 @@ module.exports = {
       verbose: true,
       dry: false, // true for simulation
     }),
+		new ExtractTextPlugin('../css/main.css')
   ],
 };
