@@ -1,0 +1,19 @@
+{
+  "name": "webpack-tut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && webpack src/index.js dist/bundle.js",
+    "build-test": "rimraf dist && webpack src/index.js dist/bundle.js --watch",
+		"start":"node server.js",
+		"postinstall":"npm run-script build"
+  },
+  "author": "erick",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "rimraf": "^2.6.1",
+    "webpack": "^2.1.0-beta.25"
+  }
+}

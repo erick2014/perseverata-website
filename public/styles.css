@@ -1,0 +1,63 @@
+
+img{
+	max-width: 100%
+}
+
+header{
+	padding: 20px 30px;
+	display: flex;
+}
+
+/*START NAVIGATION BAR*/
+ul{
+	margin:0px
+}
+
+ul > li {
+	display: inline-block;
+	margin: 0px 10px;
+	text-transform: uppercase;
+}
+
+ul > li > a{
+	color:#1f1f1f;
+	font-weight:normal;
+}
+
+.menu-box{
+	display: flex;
+	align-items: center;
+}
+
+/*END NAVIGATION BAR*/
+
+.pad-0{
+	padding: 0px ;
+}
+
+.pad-0  div{
+	padding:0 3px 5px 0;
+}
+
+.pad-rig-5{
+	padding: 0 5px 0px 0px;
+}
+
+.big-img{
+	margin-bottom: 8px;
+}
+
+.product-box{
+ position:relative;
+}
+
+.img-box img{
+	width:100%;
+	height:100%;
+}
+
+.gallery-box{
+	width:900px;
+	height: 900px;
+	margin:0 auto;
+}
